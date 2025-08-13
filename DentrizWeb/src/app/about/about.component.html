@@ -1,0 +1,37 @@
+<div class="about-container">
+  <div class="about-header">
+    <h1>About DentRiz</h1>
+    <p>Your trusted partner in dental care for over 20 years</p>
+  </div>
+
+  <div class="about-content">
+    <div class="about-section">
+      <h2>Our Mission</h2>
+      <p>At DentRiz, we are committed to providing exceptional dental care in a comfortable and welcoming environment. Our team of experienced professionals uses the latest technology and techniques to ensure the best possible outcomes for our patients.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>Experienced and qualified dental professionals</li>
+        <li>State-of-the-art dental technology</li>
+        <li>Comfortable and modern facility</li>
+        <li>Comprehensive dental services</li>
+        <li>Patient-centered approach</li>
+        <li>Flexible appointment scheduling</li>
+      </ul>
+    </div>
+
+    <div class="team-section">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member" *ngFor="let member of teamMembers">
+          <div class="member-image">{{ member.image }}</div>
+          <h3>{{ member.name }}</h3>
+          <h4>{{ member.position }}</h4>
+          <p>{{ member.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
