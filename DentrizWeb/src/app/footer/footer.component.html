@@ -1,27 +1,118 @@
 <footer class="footer">
   <div class="footer-content">
-    <div class="footer-section">
-      <h3>DentRiz</h3>
-      <p>Your trusted partner in dental care</p>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Practice Info -->
+        <div class="footer-section">
+          <h3>DentRiz Dental</h3>
+          <p class="practice-description">
+            Your trusted dental care partner for over 15 years. We provide comprehensive dental services with a focus on patient comfort and advanced technology.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">📘 Facebook</a>
+            <a href="#" class="social-link">📷 Instagram</a>
+            <a href="#" class="social-link">🐦 Twitter</a>
+            <a href="#" class="social-link">💼 LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/about">About Us</a></li>
+            <li><a routerLink="/services">Services</a></li>
+            <li><a routerLink="/about#doctors">Our Doctors</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <ul class="footer-links">
+            <li><a routerLink="/services#preventive">Preventive Care</a></li>
+            <li><a routerLink="/services#restorative">Restorative Care</a></li>
+            <li><a routerLink="/services#cosmetic">Cosmetic Services</a></li>
+            <li><a routerLink="/services#emergency">Emergency Care</a></li>
+            <li><a routerLink="/services">Dental Implants</a></li>
+            <li><a routerLink="/services">Invisalign®</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h3>Contact Information</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <p>123 Dental Street<br>City, State 12345</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>(555) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <p>info@dentriz.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Office Hours -->
+        <div class="footer-section">
+          <h3>Office Hours</h3>
+          <div class="hours-info">
+            <div class="hours-row">
+              <span class="day">Monday - Thursday:</span>
+              <span class="time">10:00 AM - 6:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Friday:</span>
+              <span class="time">10:00 AM - 5:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Saturday:</span>
+              <span class="time">10:00 AM - 3:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Sunday:</span>
+              <span class="time">Closed</span>
+            </div>
+          </div>
+          <div class="emergency-note">
+            <strong>🆘 Emergency Care Available</strong>
+            <p>24/7 emergency dental services</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <div class="copyright">
+            <p>&copy; 2024 DentRiz Dental. All rights reserved.</p>
+          </div>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Sitemap</a>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <div class="footer-section">
-      <h4>Contact</h4>
-      <p>Email: info@dentriz.com</p>
-      <p>Phone: (555) 123-4567</p>
-    </div>
-    
-    <div class="footer-section">
-      <h4>Services</h4>
-      <ul>
-        <li>General Dentistry</li>
-        <li>Cosmetic Dentistry</li>
-        <li>Emergency Care</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="footer-bottom">
-    <p>&copy; {{ currentYear }} DentRiz. All rights reserved.</p>
   </div>
 </footer>

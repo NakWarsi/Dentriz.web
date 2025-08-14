@@ -1,24 +1,36 @@
 <header class="header">
-  <div class="header-container">
-    <div class="logo">
-      <a routerLink="/">
-        <h1>DentRiz</h1>
-      </a>
-    </div>
-    
-    <nav class="nav" [class.nav-open]="isMenuOpen">
-      <ul class="nav-list">
-        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-        <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
-        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-      </ul>
-    </nav>
-    
-    <div class="mobile-menu-toggle" (click)="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+  <div class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a routerLink="/">
+          <h1>DentRiz Dental</h1>
+          <span class="tagline">Your Smile, Our Priority</span>
+        </a>
+      </div>
+      
+      <nav class="nav" [class.nav-open]="isMenuOpen">
+        <ul class="nav-list">
+          <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Services</a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/services#preventive">Preventive Care</a></li>
+              <li><a routerLink="/services#restorative">Restorative Care</a></li>
+              <li><a routerLink="/services#cosmetic">Cosmetic Services</a></li>
+              <li><a routerLink="/services#emergency">Emergency Care</a></li>
+            </ul>
+          </li>
+          <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+          <li><a routerLink="/about#doctors" routerLinkActive="active">Our Doctors</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
 </header>

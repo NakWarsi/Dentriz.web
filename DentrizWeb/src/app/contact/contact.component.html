@@ -1,89 +1,243 @@
-<div class="contact-container">
-  <div class="contact-header">
+<!-- Contact Hero -->
+<section class="contact-hero">
+  <div class="container">
     <h1>Contact Us</h1>
-    <p>Get in touch with us for any questions or to schedule an appointment</p>
+    <p>Get in touch with our dental care team</p>
   </div>
+</section>
 
-  <div class="contact-content">
-    <div class="contact-info">
-      <h2>Get In Touch</h2>
-      <div class="info-item">
-        <h3>📍 Address</h3>
-        <p>123 Dental Street<br>City, State 12345</p>
+<!-- Contact Information -->
+<section class="contact-info-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h3>Phone</h3>
+        <p class="contact-detail">(555) 123-4567</p>
+        <p class="contact-note">Call us for appointments and emergencies</p>
       </div>
       
-      <div class="info-item">
-        <h3>📞 Phone</h3>
-        <p>(555) 123-4567</p>
+      <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <h3>Email</h3>
+        <p class="contact-detail">info@dentriz.com</p>
+        <p class="contact-note">Send us a message anytime</p>
       </div>
       
-      <div class="info-item">
-        <h3>✉️ Email</h3>
-        <p>info@dentriz.com</p>
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h3>Address</h3>
+        <p class="contact-detail">123 Dental Street<br>City, State 12345</p>
+        <p class="contact-note">Conveniently located in the heart of the city</p>
       </div>
       
-      <div class="info-item">
-        <h3>🕒 Hours</h3>
-        <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
-           Saturday: 9:00 AM - 3:00 PM<br>
-           Sunday: Closed</p>
+      <div class="contact-card">
+        <div class="contact-icon">🕒</div>
+        <h3>Emergency</h3>
+        <p class="contact-detail">(555) 123-4567</p>
+        <p class="contact-note">24/7 emergency dental care available</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="contact-form">
-      <h2>Send us a Message</h2>
-      <form (ngSubmit)="onSubmit()" #contactFormRef="ngForm">
-        <div class="form-group">
-          <label for="name">Full Name *</label>
-          <input 
-            type="text" 
-            id="name" 
-            name="name" 
-            [(ngModel)]="contactForm.name" 
-            required>
+<!-- Office Hours -->
+<section class="hours-section">
+  <div class="container">
+    <h2 class="section-title">Office Hours</h2>
+    <p class="section-subtitle">Convenient hours to fit your busy schedule</p>
+    
+    <div class="hours-content">
+      <div class="hours-table">
+        <div class="hours-row">
+          <div class="day">Monday</div>
+          <div class="time">10:00 AM - 6:00 PM</div>
         </div>
-
-        <div class="form-group">
-          <label for="email">Email Address *</label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            [(ngModel)]="contactForm.email" 
-            required>
+        <div class="hours-row">
+          <div class="day">Tuesday</div>
+          <div class="time">10:00 AM - 6:00 PM</div>
         </div>
-
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input 
-            type="tel" 
-            id="phone" 
-            name="phone" 
-            [(ngModel)]="contactForm.phone">
+        <div class="hours-row">
+          <div class="day">Wednesday</div>
+          <div class="time">10:00 AM - 6:00 PM</div>
         </div>
-
-        <div class="form-group">
-          <label for="subject">Subject *</label>
-          <input 
-            type="text" 
-            id="subject" 
-            name="subject" 
-            [(ngModel)]="contactForm.subject" 
-            required>
+        <div class="hours-row">
+          <div class="day">Thursday</div>
+          <div class="time">10:00 AM - 6:00 PM</div>
         </div>
-
-        <div class="form-group">
-          <label for="message">Message *</label>
-          <textarea 
-            id="message" 
-            name="message" 
-            rows="5" 
-            [(ngModel)]="contactForm.message" 
-            required></textarea>
+        <div class="hours-row">
+          <div class="day">Friday</div>
+          <div class="time">10:00 AM - 5:00 PM</div>
         </div>
-
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+        <div class="hours-row">
+          <div class="day">Saturday</div>
+          <div class="time">10:00 AM - 3:00 PM</div>
+        </div>
+        <div class="hours-row closed">
+          <div class="day">Sunday</div>
+          <div class="time">Closed</div>
+        </div>
+      </div>
+      
+      <div class="hours-note">
+        <h3>📋 Important Notes</h3>
+        <ul>
+          <li>We offer flexible appointment scheduling</li>
+          <li>Emergency appointments available outside regular hours</li>
+          <li>New patients welcome - call to schedule your first visit</li>
+          <li>We accept most insurance plans</li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<!-- Location & Map -->
+<section class="location-section">
+  <div class="container">
+    <div class="location-content">
+      <div class="location-info">
+        <h2>Find Our Office</h2>
+        <p>
+          Our dental office is conveniently located in the heart of the city, with easy access to public transportation and plenty of parking available. We're committed to making your visit as comfortable and convenient as possible.
+        </p>
+        
+        <div class="location-details">
+          <div class="detail-item">
+            <strong>📍 Address:</strong>
+            <p>123 Dental Street<br>City, State 12345</p>
+          </div>
+          
+          <div class="detail-item">
+            <strong>🚗 Parking:</strong>
+            <p>Free parking available in our lot</p>
+          </div>
+          
+          <div class="detail-item">
+            <strong>🚌 Public Transit:</strong>
+            <p>Bus routes 10, 15, and 22 stop nearby</p>
+          </div>
+          
+          <div class="detail-item">
+            <strong>♿ Accessibility:</strong>
+            <p>Wheelchair accessible entrance and facilities</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="map-placeholder">
+        <div class="map-content">
+          <span>🗺️</span>
+          <h3>Interactive Map</h3>
+          <p>Click to view our location on Google Maps</p>
+          <a href="#" class="btn-outline">View on Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Insurance & Payment -->
+<section class="insurance-section">
+  <div class="container">
+    <h2 class="section-title">Insurance & Payment Options</h2>
+    <p class="section-subtitle">We make dental care accessible and affordable</p>
+    
+    <div class="insurance-grid">
+      <div class="insurance-card">
+        <div class="insurance-icon">🏥</div>
+        <h3>Insurance Plans</h3>
+        <p>We accept most major insurance plans and will help you understand your coverage. Our team will file claims on your behalf to make the process as smooth as possible.</p>
+        <ul>
+          <li>Blue Cross Blue Shield</li>
+          <li>Aetna</li>
+          <li>Cigna</li>
+          <li>Delta Dental</li>
+          <li>And many more...</li>
+        </ul>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-icon">💳</div>
+        <h3>Payment Options</h3>
+        <p>We offer flexible payment options to make dental care affordable for everyone. We accept various payment methods and can work with you to create a payment plan.</p>
+        <ul>
+          <li>Cash and Check</li>
+          <li>Credit Cards (Visa, MasterCard, Amex)</li>
+          <li>Flexible Payment Plans</li>
+          <li>In-House Dental Plan</li>
+          <li>CareCredit Financing</li>
+        </ul>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-icon">📋</div>
+        <h3>New Patient Special</h3>
+        <p>New to our practice? Take advantage of our new patient special and start your journey to a healthier smile today.</p>
+        <ul>
+          <li>Comprehensive Exam</li>
+          <li>Digital X-Rays</li>
+          <li>Professional Cleaning</li>
+          <li>Treatment Consultation</li>
+          <li>Special pricing for new patients</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Find answers to common questions about our services</p>
+    
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>How do I schedule an appointment?</h3>
+        <p>You can schedule an appointment by calling us at (555) 123-4567, or you can request an appointment through our website. We'll work with you to find a convenient time.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>What should I bring to my first appointment?</h3>
+        <p>Please bring your ID, insurance card (if applicable), and any relevant medical history. You can also download and fill out our new patient forms from our website.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Do you offer emergency dental care?</h3>
+        <p>Yes, we provide emergency dental care. If you have a dental emergency, please call us immediately at (555) 123-4567, and we'll help you get the care you need.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>What insurance plans do you accept?</h3>
+        <p>We accept most major insurance plans. Please call our office to verify your specific plan coverage, and we'll be happy to help you understand your benefits.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Do you offer payment plans?</h3>
+        <p>Yes, we offer flexible payment plans to make dental care affordable. We also accept CareCredit and have an in-house dental plan for patients without insurance.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>How often should I visit the dentist?</h3>
+        <p>We recommend visiting the dentist every 6 months for routine checkups and cleanings. However, some patients may need more frequent visits based on their oral health needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="contact-cta">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Schedule Your Visit?</h2>
+      <p>
+        Don't wait to achieve the smile you've always wanted. Contact us today to schedule your appointment and take the first step toward better oral health.
+      </p>
+      <div class="cta-buttons">
+        <a href="tel:555-123-4567" class="btn-primary">📞 Call Now</a>
+        <a href="mailto:info@dentriz.com" class="btn-secondary">Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,14 +1,16 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppointmentButtonComponent } from './appointment-button/appointment-button.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  standalone: true,
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, AppointmentButtonComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('DentrizWeb');
+export class AppComponent {
+  title = 'DentRiz Dental';
 }
