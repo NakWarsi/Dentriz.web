@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 import { PreventiveCareComponent } from './services/preventive-care/preventive-care.component';
 import { RestorativeCareComponent } from './services/restorative-care/restorative-care.component';
 import { CosmeticServicesComponent } from './services/cosmetic-services/cosmetic-services.component';
@@ -32,7 +33,8 @@ export const routes: Routes = [
   { path: 'services/orthodontics', component: OrthodonticsComponent },
   { path: 'services/pediatric-dentistry', component: PediatricDentistryComponent },
   { path: 'services/oral-surgery', component: OralSurgeryComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
+                { path: 'about', component: AboutComponent },
+              { path: 'reviews', component: ReviewsComponent },
+              { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '' }
 ];
