@@ -3,11 +3,35 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
+import { PreventiveCareComponent } from './services/preventive-care/preventive-care.component';
+import { RestorativeCareComponent } from './services/restorative-care/restorative-care.component';
+import { CosmeticServicesComponent } from './services/cosmetic-services/cosmetic-services.component';
+import { EmergencyCareComponent } from './services/emergency-care/emergency-care.component';
+import { DentalImplantsComponent } from './services/dental-implants/dental-implants.component';
+import { InvisalignComponent } from './services/invisalign/invisalign.component';
+import { TeethWhiteningComponent } from './services/teeth-whitening/teeth-whitening.component';
+import { PeriodonticsComponent } from './services/periodontics/periodontics.component';
+import { EndodonticsComponent } from './services/endodontics/endodontics.component';
+import { OrthodonticsComponent } from './services/orthodontics/orthodontics.component';
+import { PediatricDentistryComponent } from './services/pediatric-dentistry/pediatric-dentistry.component';
+import { OralSurgeryComponent } from './services/oral-surgery/oral-surgery.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
+  { path: 'services/preventive-care', component: PreventiveCareComponent },
+  { path: 'services/restorative-care', component: RestorativeCareComponent },
+  { path: 'services/cosmetic-services', component: CosmeticServicesComponent },
+  { path: 'services/emergency-care', component: EmergencyCareComponent },
+  { path: 'services/dental-implants', component: DentalImplantsComponent },
+  { path: 'services/invisalign', component: InvisalignComponent },
+  { path: 'services/teeth-whitening', component: TeethWhiteningComponent },
+  { path: 'services/periodontics', component: PeriodonticsComponent },
+  { path: 'services/endodontics', component: EndodonticsComponent },
+  { path: 'services/orthodontics', component: OrthodonticsComponent },
+  { path: 'services/pediatric-dentistry', component: PediatricDentistryComponent },
+  { path: 'services/oral-surgery', component: OralSurgeryComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '' }
