@@ -2,12 +2,10 @@
   "name": "dentriz-web",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:DentrizWeb": "node dist/DentrizWeb/server/server.mjs"
+    "start": "node server.js",
+    "build": "ng build --configuration production",
+    "build:static": "ng build --configuration production --output-path=dist/DentrizWeb/browser",
+    "postinstall": "npm run build:static"
   },
   "prettier": {
     "overrides": [
@@ -29,7 +27,7 @@
     "@angular/platform-server": "^20.1.0",
     "@angular/router": "^20.1.0",
     "@angular/ssr": "^20.1.5",
-    "express": "^5.1.0",
+    "express": "^4.21.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },

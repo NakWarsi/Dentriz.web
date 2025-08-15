@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/fa973cf0-ab64-4136-83ce-e8776e811046/resourceGroups/dentriz/providers/Microsoft.Web/sites/dentriz",
+    "appService.deploySubpath": "DentrizWeb"
+}
