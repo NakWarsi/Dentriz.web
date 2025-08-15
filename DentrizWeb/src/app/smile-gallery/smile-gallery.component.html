@@ -1,0 +1,56 @@
+<div class="smile-gallery">
+  <div class="gallery-hero">
+    <div class="container">
+      <h1 class="gallery-title">Our Smile Gallery</h1>
+      <p class="gallery-subtitle">Witness the incredible transformations and beautiful smiles we've created together</p>
+    </div>
+  </div>
+
+  <div class="gallery-content">
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-card" *ngFor="let section of gallerySections" [routerLink]="section.route">
+          <div class="card-image" [style.background]="section.color">
+            <div class="image-placeholder">
+              <span class="placeholder-text">{{ section.title }}</span>
+              <div class="image-count">{{ section.imageCount }} Photos</div>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">{{ section.title }}</h3>
+            <p class="card-description">{{ section.description }}</p>
+            <div class="card-action">
+              <span class="view-gallery">View Gallery</span>
+              <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Smiles Transformed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Happy Patients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Patient Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

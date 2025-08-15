@@ -16,6 +16,17 @@ import { EndodonticsComponent } from './services/endodontics/endodontics.compone
 import { OrthodonticsComponent } from './services/orthodontics/orthodontics.component';
 import { PediatricDentistryComponent } from './services/pediatric-dentistry/pediatric-dentistry.component';
 import { OralSurgeryComponent } from './services/oral-surgery/oral-surgery.component';
+import { SmileGalleryComponent } from './smile-gallery/smile-gallery.component';
+import { BeforeAfterComponent } from './smile-gallery/before-after/before-after.component';
+import { OurWorkComponent } from './smile-gallery/our-work/our-work.component';
+import { SmileTransformationsComponent } from './smile-gallery/smile-transformations/smile-transformations.component';
+import { SmileShowcaseComponent } from './smile-gallery/smile-showcase/smile-showcase.component';
+import { ClinicPhotosComponent } from './smile-gallery/clinic-photos/clinic-photos.component';
+import { EventsComponent } from './smile-gallery/events/events.component';
+import { PatientStoriesComponent } from './smile-gallery/patient-stories/patient-stories.component';
+import { TechnologyShowcaseComponent } from './smile-gallery/technology-showcase/technology-showcase.component';
+import { TeamGalleryComponent } from './smile-gallery/team-gallery/team-gallery.component';
+import { AwardsRecognitionComponent } from './smile-gallery/awards-recognition/awards-recognition.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,8 +44,19 @@ export const routes: Routes = [
   { path: 'services/orthodontics', component: OrthodonticsComponent },
   { path: 'services/pediatric-dentistry', component: PediatricDentistryComponent },
   { path: 'services/oral-surgery', component: OralSurgeryComponent },
-                { path: 'about', component: AboutComponent },
-              { path: 'reviews', component: ReviewsComponent },
-              { path: 'contact', component: ContactComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'reviews', component: ReviewsComponent },
+  { path: 'smile-gallery', component: SmileGalleryComponent },
+  { path: 'smile-gallery/before-after', component: BeforeAfterComponent },
+  { path: 'smile-gallery/our-work', component: OurWorkComponent },
+  { path: 'smile-gallery/smile-transformations', component: SmileTransformationsComponent },
+  { path: 'smile-gallery/smile-showcase', component: SmileShowcaseComponent },
+  { path: 'smile-gallery/clinic-photos', component: ClinicPhotosComponent },
+  { path: 'smile-gallery/events', component: EventsComponent },
+  { path: 'smile-gallery/patient-stories', component: PatientStoriesComponent },
+  { path: 'smile-gallery/technology-showcase', component: TechnologyShowcaseComponent },
+  { path: 'smile-gallery/team-gallery', component: TeamGalleryComponent },
+  { path: 'smile-gallery/awards-recognition', component: AwardsRecognitionComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '' }
 ];
