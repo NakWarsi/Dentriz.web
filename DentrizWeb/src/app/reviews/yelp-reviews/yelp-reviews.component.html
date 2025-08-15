@@ -1,4 +1,4 @@
-<div class="google-reviews-page">
+<div class="yelp-reviews-page">
   <!-- Header Section -->
   <section class="header-section">
     <div class="container">
@@ -8,9 +8,9 @@
             ← Back to Reviews
           </button>
         </div>
-        <div class="google-logo">
-          <div class="google-icon">G</div>
-          <h1>Google Reviews</h1>
+        <div class="yelp-logo">
+          <div class="yelp-icon">Y</div>
+          <h1>Yelp Reviews</h1>
         </div>
         <div class="overall-stats">
           <div class="rating-display">
@@ -51,7 +51,7 @@
     <div class="container">
       <h2>Recent Reviews</h2>
       <div class="reviews-list">
-        <div class="review-card" *ngFor="let review of googleReviews">
+        <div class="review-card" *ngFor="let review of yelpReviews">
           <div class="review-header">
             <div class="reviewer-info">
               <div class="reviewer-avatar">
@@ -73,9 +73,17 @@
             <p>{{ review.text }}</p>
           </div>
           <div class="review-footer">
-            <button class="helpful-btn">
-              👍 Helpful ({{ review.helpful }})
-            </button>
+            <div class="social-actions">
+              <button class="useful-btn">
+                👍 Useful ({{ review.useful }})
+              </button>
+              <button class="funny-btn">
+                😄 Funny ({{ review.funny }})
+              </button>
+              <button class="cool-btn">
+                😎 Cool ({{ review.cool }})
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -87,7 +95,7 @@
     <div class="container">
       <div class="cta-content">
         <h2>Share Your Experience</h2>
-        <p>Help others by leaving a review on Google</p>
+        <p>Help others by leaving a review on Yelp</p>
         <button class="btn-write-review">Write a Review</button>
       </div>
     </div>

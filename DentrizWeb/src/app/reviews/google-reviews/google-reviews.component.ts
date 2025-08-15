@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-google-reviews',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './google-reviews.component.html',
   styleUrl: './google-reviews.component.css'
 })
 export class GoogleReviewsComponent {
+  constructor(private router: Router) {}
+
   googleReviews = [
     {
       id: 1,
@@ -77,5 +80,9 @@ export class GoogleReviewsComponent {
       case 1: return (this.overallStats.oneStar / total) * 100;
       default: return 0;
     }
+  }
+
+  backToReviews() {
+    this.router.navigate(['/reviews']);
   }
 }

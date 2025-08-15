@@ -4,6 +4,12 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { GoogleReviewsComponent } from './reviews/google-reviews/google-reviews.component';
+import { FacebookReviewsComponent } from './reviews/facebook-reviews/facebook-reviews.component';
+import { YelpReviewsComponent } from './reviews/yelp-reviews/yelp-reviews.component';
+import { HealthgradesReviewsComponent } from './reviews/healthgrades-reviews/healthgrades-reviews.component';
+import { ZocdocReviewsComponent } from './reviews/zocdoc-reviews/zocdoc-reviews.component';
+import { VitalsReviewsComponent } from './reviews/vitals-reviews/vitals-reviews.component';
 import { PreventiveCareComponent } from './services/preventive-care/preventive-care.component';
 import { RestorativeCareComponent } from './services/restorative-care/restorative-care.component';
 import { CosmeticServicesComponent } from './services/cosmetic-services/cosmetic-services.component';
@@ -46,6 +52,12 @@ export const routes: Routes = [
   { path: 'services/oral-surgery', component: OralSurgeryComponent },
   { path: 'about', component: AboutComponent },
   { path: 'reviews', component: ReviewsComponent },
+  { path: 'reviews/google', component: GoogleReviewsComponent },
+  { path: 'reviews/facebook', component: FacebookReviewsComponent },
+  { path: 'reviews/yelp', component: YelpReviewsComponent },
+  { path: 'reviews/healthgrades', component: HealthgradesReviewsComponent },
+  { path: 'reviews/zocdoc', component: ZocdocReviewsComponent },
+  { path: 'reviews/vitals', component: VitalsReviewsComponent },
   { path: 'smile-gallery', component: SmileGalleryComponent },
   { path: 'smile-gallery/before-after', component: BeforeAfterComponent },
   { path: 'smile-gallery/our-work', component: OurWorkComponent },

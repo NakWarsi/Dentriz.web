@@ -1,4 +1,4 @@
-<div class="google-reviews-page">
+<div class="vitals-reviews-page">
   <!-- Header Section -->
   <section class="header-section">
     <div class="container">
@@ -8,9 +8,9 @@
             ← Back to Reviews
           </button>
         </div>
-        <div class="google-logo">
-          <div class="google-icon">G</div>
-          <h1>Google Reviews</h1>
+        <div class="vitals-logo">
+          <div class="vitals-icon">V</div>
+          <h1>Vitals Reviews</h1>
         </div>
         <div class="overall-stats">
           <div class="rating-display">
@@ -49,9 +49,9 @@
   <!-- Reviews List Section -->
   <section class="reviews-section">
     <div class="container">
-      <h2>Recent Reviews</h2>
+      <h2>Professional Reviews</h2>
       <div class="reviews-list">
-        <div class="review-card" *ngFor="let review of googleReviews">
+        <div class="review-card" *ngFor="let review of vitalsReviews">
           <div class="review-header">
             <div class="reviewer-info">
               <div class="reviewer-avatar">
@@ -59,6 +59,7 @@
               </div>
               <div class="reviewer-details">
                 <div class="reviewer-name">{{ review.author }}</div>
+                <div class="specialty-badge">{{ review.specialty }}</div>
                 <div class="review-meta">
                   <div class="review-rating">
                     <span class="star filled" *ngFor="let star of [1,2,3,4,5]">★</span>
@@ -86,8 +87,8 @@
   <section class="cta-section">
     <div class="container">
       <div class="cta-content">
-        <h2>Share Your Experience</h2>
-        <p>Help others by leaving a review on Google</p>
+        <h2>Share Your Professional Experience</h2>
+        <p>Help other healthcare professionals by leaving a review on Vitals</p>
         <button class="btn-write-review">Write a Review</button>
       </div>
     </div>

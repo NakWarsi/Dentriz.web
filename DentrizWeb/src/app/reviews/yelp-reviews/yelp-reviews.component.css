@@ -1,4 +1,4 @@
-.google-reviews-page {
+.yelp-reviews-page {
   min-height: 100vh;
   background-color: #f8f9fa;
 }
@@ -25,7 +25,7 @@
 }
 
 .btn-back {
-  background: #4285f4;
+  background: #ff1a1a;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -39,22 +39,22 @@
 }
 
 .btn-back:hover {
-  background: #3367d6;
+  background: #e60000;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 26, 26, 0.3);
 }
 
-.google-logo {
+.yelp-logo {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin: 0 auto;
 }
 
-.google-icon {
+.yelp-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  background: #ff1a1a;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@
   font-size: 1.5rem;
 }
 
-.google-logo h1 {
+.yelp-logo h1 {
   margin: 0;
   color: #2c3e50;
   font-size: 2rem;
@@ -129,22 +129,21 @@
 
 .rating-label {
   min-width: 80px;
-  font-weight: 600;
+  font-weight: 500;
   color: #2c3e50;
 }
 
 .rating-bar-container {
   flex: 1;
   height: 20px;
-  background-color: #f0f0f0;
+  background: #f0f0f0;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .rating-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, #4285f4, #34a853);
-  border-radius: 10px;
+  background: #ff1a1a;
   transition: width 0.3s ease;
 }
 
@@ -159,6 +158,7 @@
 .reviews-section {
   background: white;
   padding: 40px 0;
+  margin: 20px 0;
 }
 
 .reviews-section h2 {
@@ -173,16 +173,11 @@
 }
 
 .review-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  background: #f8f9fa;
+  border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  background: white;
-  transition: box-shadow 0.3s ease;
-}
-
-.review-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #ff1a1a;
 }
 
 .review-header {
@@ -196,15 +191,16 @@
 }
 
 .reviewer-avatar {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #4285f4, #34a853);
+  width: 50px;
+  height: 50px;
+  background: #ff1a1a;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .reviewer-details {
@@ -212,9 +208,9 @@
 }
 
 .reviewer-name {
-  font-weight: 600;
+  font-weight: bold;
   color: #2c3e50;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
 }
 
 .review-meta {
@@ -229,22 +225,18 @@
   gap: 0.1rem;
 }
 
-.review-rating .star {
-  font-size: 0.9rem;
-}
-
 .review-date {
   color: #7f8c8d;
   font-size: 0.9rem;
 }
 
 .verified-badge {
-  background: #34a853;
+  background: #28a745;
   color: white;
-  padding: 0.2rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 12px;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .review-content {
@@ -258,60 +250,78 @@
 }
 
 .review-footer {
-  display: flex;
-  justify-content: flex-end;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1rem;
 }
 
-.helpful-btn {
-  background: none;
+.social-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.useful-btn, .funny-btn, .cool-btn {
+  background: white;
   border: 1px solid #e0e0e0;
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  color: #7f8c8d;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 0.9rem;
 }
 
-.helpful-btn:hover {
-  background: #f8f9fa;
-  border-color: #4285f4;
-  color: #4285f4;
+.useful-btn:hover {
+  background: #ff1a1a;
+  color: white;
+  border-color: #ff1a1a;
+}
+
+.funny-btn:hover {
+  background: #ffc107;
+  color: white;
+  border-color: #ffc107;
+}
+
+.cool-btn:hover {
+  background: #17a2b8;
+  color: white;
+  border-color: #17a2b8;
 }
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, #4285f4, #34a853);
+  background: linear-gradient(135deg, #ff1a1a 0%, #e60000 100%);
   color: white;
   padding: 60px 0;
   text-align: center;
 }
 
 .cta-content h2 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-size: 2rem;
 }
 
 .cta-content p {
+  font-size: 1.2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
 }
 
 .btn-write-review {
   background: white;
-  color: #4285f4;
+  color: #ff1a1a;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 8px;
-  font-weight: 600;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 1.1rem;
 }
 
 .btn-write-review:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Container */
@@ -325,8 +335,17 @@
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
-    gap: 2rem;
-    text-align: center;
+    gap: 1rem;
+  }
+  
+  .back-button {
+    position: static;
+    transform: none;
+    align-self: flex-start;
+  }
+  
+  .yelp-logo {
+    margin: 0;
   }
   
   .overall-stats {
@@ -337,23 +356,17 @@
     align-items: center;
   }
   
+  .social-actions {
+    justify-content: center;
+  }
+  
   .rating-bar {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
   }
   
-  .rating-label {
-    min-width: auto;
-  }
-  
-  .rating-bar-container {
-    width: 100%;
-  }
-  
-  .review-meta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+  .rating-count {
+    text-align: left;
   }
 }
