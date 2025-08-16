@@ -68,84 +68,84 @@ export class ReviewsComponent {
     {
       name: 'Patient A',
       rating: 5,
-      text: 'I was looking for the best dentist in Hinjewadi and found this amazing dental clinic in Wakad. They offer everything from dental cleaning in Wakad, veneers in Wakad, and cosmetic dentistry in Wakad to dental implants in Pune and invisible braces in Pune. Truly the best dental clinic in Wakad with a skilled pediatric dentist Pune and expert orthodontist in Wakad. Highly recommended if you need the top dentist in Pune!',
+      text: 'Found the best dentist in Wakad! Amazing cosmetic dentistry in Wakad and dental implants in Pune. The best dental clinic in Wakad with expert orthodontist in Wakad.',
       platform: 'Google',
       date: '2024-01-15'
     },
     {
       name: 'Patient B',
       rating: 5,
-      text: 'I was searching for the best dentist in Wakad and discovered this excellent dental clinic in Hinjewadi. They provide everything from teeth whitening in Wakad, dental implants in Wakad, and emergency dental care in Wakad to Invisalign treatment in Pune and root canal treatment in Pune. Definitely the best dental clinic in Hinjewadi with an experienced cosmetic dentist Pune and professional orthodontist in Wakad. Highly recommended for anyone seeking the top dentist in Pune!',
+      text: 'Excellent teeth whitening in Wakad and veneers in Wakad. Top dentist in Pune with emergency dental care in Wakad. Best dental clinic in Hinjewadi!',
       platform: 'Facebook',
       date: '2024-01-10'
     },
     {
       name: 'Patient C',
       rating: 5,
-      text: 'I was looking for the best dentist in Pune and found this outstanding dental clinic in Wakad. They offer everything from preventive care in Wakad, restorative dentistry in Wakad, and periodontics in Wakad to pediatric dentistry in Pune and oral surgery in Pune. Truly the best dental clinic in Wakad with a skilled endodontist Pune and expert cosmetic dentist in Wakad. Highly recommended if you need the top dentist in Pune!',
+      text: 'Invisalign treatment in Pune was perfect! Professional cosmetic dentist Pune and preventive care in Wakad. DentRiz Dental Clinic is outstanding.',
       platform: 'Yelp',
       date: '2024-01-08'
     },
     {
       name: 'Patient D',
       rating: 5,
-      text: 'I was searching for the best dentist in Hinjewadi and discovered this amazing dental clinic in Wakad. They provide everything from dental cleaning in Wakad, veneers in Wakad, and teeth whitening in Wakad to dental implants in Pune and invisible braces in Pune. Definitely the best dental clinic in Hinjewadi with an experienced pediatric dentist Pune and professional orthodontist in Wakad. Highly recommended for anyone seeking the top dentist in Pune!',
+      text: 'Root canal treatment in Pune was painless. Expert orthodontist in Wakad and dental cleaning in Wakad. Best dentist in Wakad!',
       platform: 'Healthgrades',
       date: '2024-01-05'
     },
     {
       name: 'Patient E',
       rating: 5,
-      text: 'I was looking for the best dentist in Wakad and found this excellent dental clinic in Hinjewadi. They offer everything from cosmetic dentistry in Wakad, dental implants in Wakad, and emergency dental care in Wakad to Invisalign treatment in Pune and root canal treatment in Pune. Truly the best dental clinic in Wakad with a skilled orthodontist Pune and expert cosmetic dentist in Wakad. Highly recommended if you need the top dentist in Pune!',
+      text: 'Pediatric dentist Pune is amazing with kids. Dental implants in Wakad and cosmetic dentistry in Wakad. Top dentist in Pune!',
       platform: 'Zocdoc',
       date: '2024-01-03'
     },
     {
       name: 'Patient F',
       rating: 5,
-      text: 'I was searching for the best dentist in Pune and discovered this outstanding dental clinic in Wakad. They provide everything from preventive care in Wakad, restorative dentistry in Wakad, and periodontics in Wakad to pediatric dentistry in Pune and oral surgery in Pune. Definitely the best dental clinic in Hinjewadi with an experienced endodontist Pune and professional orthodontist in Wakad. Highly recommended for anyone seeking the top dentist in Pune!',
+      text: 'Oral surgeon in Pune did excellent work. Periodontics in Wakad and restorative dentistry in Wakad. Best dental clinic in Wakad!',
       platform: 'Vitals',
       date: '2024-01-01'
     },
     {
       name: 'Patient G',
       rating: 5,
-      text: 'I was looking for the best dentist in Hinjewadi and found this amazing dental clinic in Wakad. They offer everything from dental cleaning in Wakad, veneers in Wakad, and cosmetic dentistry in Wakad to dental implants in Pune and invisible braces in Pune. Truly the best dental clinic in Wakad with a skilled pediatric dentist Pune and expert orthodontist in Wakad. Highly recommended if you need the top dentist in Pune!',
+      text: 'Endodontist Pune saved my tooth! Teeth whitening in Wakad and veneers in Wakad. Expert orthodontist in Wakad at DentRiz.',
       platform: 'Google',
       date: '2023-12-28'
     },
     {
       name: 'Patient H',
       rating: 5,
-      text: 'I was searching for the best dentist in Wakad and discovered this excellent dental clinic in Hinjewadi. They provide everything from teeth whitening in Wakad, dental implants in Wakad, and emergency dental care in Wakad to Invisalign treatment in Pune and root canal treatment in Pune. Definitely the best dental clinic in Hinjewadi with an experienced cosmetic dentist Pune and professional orthodontist in Wakad. Highly recommended for anyone seeking the top dentist in Pune!',
+      text: 'Dental hygienist in Wakad is thorough. Invisible braces in Pune and emergency dental care in Wakad. Best dentist in Hinjewadi!',
       platform: 'Facebook',
       date: '2023-12-25'
     },
     {
       name: 'Patient I',
       rating: 5,
-      text: 'I was looking for the best dentist in Pune and found this outstanding dental clinic in Wakad. They offer everything from preventive care in Wakad, restorative dentistry in Wakad, and periodontics in Wakad to pediatric dentistry in Pune and oral surgery in Pune. Truly the best dental clinic in Wakad with a skilled endodontist Pune and expert cosmetic dentist in Wakad. Highly recommended if you need the top dentist in Pune!',
+      text: 'Cosmetic bonding in Wakad looks natural. Dental implants in Pune and preventive care in Wakad. Top dentist in Pune!',
       platform: 'Yelp',
       date: '2023-12-20'
     },
     {
       name: 'Patient J',
       rating: 5,
-      text: 'I was searching for the best dentist in Hinjewadi and discovered this amazing dental clinic in Wakad. They provide everything from dental cleaning in Wakad, veneers in Wakad, and teeth whitening in Wakad to dental implants in Pune and invisible braces in Pune. Definitely the best dental clinic in Hinjewadi with an experienced pediatric dentist Pune and professional orthodontist in Wakad. Highly recommended for anyone seeking the top dentist in Pune!',
+      text: 'Periodontal therapy in Wakad was effective. Orthodontist in Wakad and dental cleaning in Wakad. Best dental clinic in Wakad!',
       platform: 'Healthgrades',
       date: '2023-12-15'
     },
     {
       name: 'Patient K',
       rating: 5,
-      text: 'I was looking for the best dentist in Wakad and found this excellent dental clinic in Hinjewadi. They offer everything from cosmetic dentistry in Wakad, dental implants in Wakad, and emergency dental care in Wakad to Invisalign treatment in Pune and root canal treatment in Pune. Truly the best dental clinic in Wakad with a skilled orthodontist Pune and expert cosmetic dentist in Wakad. Highly recommended if you need the top dentist in Pune!',
+      text: 'Full mouth reconstruction in Pune changed my life! Cosmetic dentistry in Wakad and teeth whitening in Wakad. Expert dentist!',
       platform: 'Zocdoc',
       date: '2023-12-10'
     },
     {
       name: 'Patient L',
       rating: 5,
-      text: 'I was searching for the best dentist in Pune and discovered this outstanding dental clinic in Wakad. They provide everything from preventive care in Wakad, restorative dentistry in Wakad, and periodontics in Wakad to pediatric dentistry in Pune and oral surgery in Pune. Definitely the best dental clinic in Hinjewadi with an experienced endodontist Pune and professional orthodontist in Wakad. Highly recommended for anyone seeking the top dentist in Pune!',
+      text: 'Dental assistant in Wakad is very caring. Invisalign treatment in Pune and veneers in Wakad. Best dentist in Pune!',
       platform: 'Vitals',
       date: '2023-12-05'
     }

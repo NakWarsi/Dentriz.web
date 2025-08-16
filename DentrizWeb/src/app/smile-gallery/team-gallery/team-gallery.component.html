@@ -1,4 +1,6 @@
 <div class="team-gallery">
+  <div class="seo-badge">SEO</div>
+  
   <div class="gallery-hero">
     <div class="container">
       <nav class="breadcrumb">
@@ -6,8 +8,8 @@
         <span class="separator">/</span>
         <span>Team Gallery</span>
       </nav>
-      <h1 class="page-title">Team Gallery</h1>
-      <p class="page-subtitle">Meet our dedicated dental team and staff</p>
+      <h1 class="page-title">Team Gallery - Best Dental Clinic in Wakad</h1>
+      <p class="page-subtitle">Expert dental team in Wakad and skilled professionals in Hinjewadi. Experienced cosmetic dentist Pune and orthodontist in Wakad at DentRiz Dental Clinic.</p>
     </div>
   </div>
 
@@ -15,16 +17,17 @@
     <div class="container">
       <div class="team-grid">
         <div class="team-card" *ngFor="let member of teamMembers" (click)="openModal(member)">
+          <div class="seo-badge-card">SEO</div>
           <div class="team-image">
             <div class="image-placeholder">
-              <span class="placeholder-text">{{ member.name }}</span>
+              <span class="placeholder-text">Team Member</span>
               <div class="position-badge">{{ member.position }}</div>
             </div>
           </div>
           <div class="team-info">
-            <h3 class="member-name">{{ member.name }}</h3>
-            <p class="member-position">{{ member.position }}</p>
+            <h3 class="member-position">{{ member.position }}</h3>
             <p class="member-specialization">{{ member.specialization }}</p>
+            <p class="seo-keywords">{{ member.seoKeywords }}</p>
             <div class="member-stats">
               <span class="experience">{{ member.experience }}</span>
             </div>
@@ -51,11 +54,11 @@
       <div class="modal-body" *ngIf="selectedMember">
         <div class="modal-image">
           <div class="image-placeholder">
-            <span>{{ selectedMember.name }}</span>
+            <span>Team Member</span>
           </div>
         </div>
         <div class="modal-info">
-          <h2>{{ selectedMember.name }}</h2>
+          <h2>{{ selectedMember.position }}</h2>
           <div class="info-grid">
             <div class="info-item">
               <span class="label">Position:</span>
@@ -76,6 +79,10 @@
             <div class="info-item full-width">
               <span class="label">Bio:</span>
               <span class="value bio-text">{{ selectedMember.bio }}</span>
+            </div>
+            <div class="info-item full-width">
+              <span class="label">SEO Keywords:</span>
+              <span class="value">{{ selectedMember.seoKeywords }}</span>
             </div>
           </div>
         </div>
