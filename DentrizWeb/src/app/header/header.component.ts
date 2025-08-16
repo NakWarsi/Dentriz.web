@@ -11,8 +11,21 @@ import { RouterModule } from '@angular/router';
 })
 export class HeaderComponent {
   isMenuOpen = false;
+  isServicesOpen = false;
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+
+  toggleServices() {
+    this.isServicesOpen = !this.isServicesOpen;
+  }
+
+  closeServices() {
+    this.isServicesOpen = false;
   }
 }
