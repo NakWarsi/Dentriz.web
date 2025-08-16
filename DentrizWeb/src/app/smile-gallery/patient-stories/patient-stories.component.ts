@@ -4,13 +4,12 @@ import { RouterModule } from '@angular/router';
 
 interface PatientStory {
   id: number;
-  patientName: string;
-  age: number;
   treatment: string;
   story: string;
   image: string;
   rating: number;
   duration: string;
+  seoKeywords: string;
 }
 
 @Component({
@@ -24,86 +23,79 @@ export class PatientStoriesComponent {
   selectedStory: PatientStory | null = null;
   showModal = false;
 
+  // SEO-OPTIMIZED PATIENT STORIES - FOR SEARCH ENGINE OPTIMIZATION ONLY
   patientStories: PatientStory[] = [
     {
       id: 1,
-      patientName: "Sarah Johnson",
-      age: 28,
       treatment: "Complete Smile Makeover",
-      story: "I was always self-conscious about my smile. After my complete smile makeover, I feel like a new person. The confidence boost has changed my life both personally and professionally.",
+      story: "Dental journey experiences with the best dentist in Wakad. Success stories from cosmetic dentistry in Wakad and dental implants in Pune at DentRiz Dental Clinic. The confidence boost has changed lives both personally and professionally.",
       image: "assets/images/gallery/patient-stories/patient1.jpg",
       rating: 5,
-      duration: "6 months"
+      duration: "6 months",
+      seoKeywords: "best dentist in Wakad, cosmetic dentistry in Wakad, dental implants in Pune, DentRiz Dental Clinic"
     },
     {
       id: 2,
-      patientName: "Michael Chen",
-      age: 45,
       treatment: "Dental Implants",
-      story: "Losing my teeth was devastating. The dental implant procedure was smooth, and now I can eat anything I want. The implants look and feel completely natural.",
+      story: "Multiple dental implants in Pune to restore missing teeth at DentRiz Dental Clinic. The dental implant procedure was smooth, and now patients can eat anything they want. The implants look and feel completely natural.",
       image: "assets/images/gallery/patient-stories/patient2.jpg",
       rating: 5,
-      duration: "4 months"
+      duration: "4 months",
+      seoKeywords: "dental implants in Pune, DentRiz Dental Clinic, best dentist in Wakad"
     },
     {
       id: 3,
-      patientName: "Emily Rodriguez",
-      age: 32,
       treatment: "Invisalign Treatment",
-      story: "I was hesitant about braces as an adult, but Invisalign was perfect. It was comfortable, discreet, and the results are amazing. I wish I had done it sooner!",
+      story: "Invisalign treatment in Pune at the top dentist in Pune. The treatment was comfortable, discreet, and the results are amazing. Expert orthodontist in Wakad provides exceptional care.",
       image: "assets/images/gallery/patient-stories/patient3.jpg",
       rating: 5,
-      duration: "18 months"
+      duration: "18 months",
+      seoKeywords: "Invisalign treatment in Pune, top dentist in Pune, orthodontist in Wakad"
     },
     {
       id: 4,
-      patientName: "David Thompson",
-      age: 52,
       treatment: "Emergency Dental Care",
-      story: "When I had a dental emergency, the team was incredibly responsive and caring. They not only fixed my immediate problem but also helped me prevent future issues.",
+      story: "Emergency dental care in Wakad with the best dental clinic in Wakad. The team was incredibly responsive and caring. They not only fixed immediate problems but also helped prevent future issues.",
       image: "assets/images/gallery/patient-stories/patient4.jpg",
       rating: 5,
-      duration: "1 day"
+      duration: "1 day",
+      seoKeywords: "emergency dental care in Wakad, best dental clinic in Wakad, DentRiz Dental Clinic"
     },
     {
       id: 5,
-      patientName: "Lisa Wang",
-      age: 29,
       treatment: "Teeth Whitening & Veneers",
-      story: "My wedding was approaching and I wanted a perfect smile. The combination of whitening and veneers gave me exactly what I dreamed of. I couldn't be happier!",
+      story: "Teeth whitening in Wakad and veneers in Wakad at the best dental clinic in Hinjewadi. The combination of whitening and veneers provides perfect smiles. Experienced cosmetic dentist Pune delivers exceptional results.",
       image: "assets/images/gallery/patient-stories/patient5.jpg",
       rating: 5,
-      duration: "3 months"
+      duration: "3 months",
+      seoKeywords: "teeth whitening in Wakad, veneers in Wakad, best dental clinic in Hinjewadi, cosmetic dentist Pune"
     },
     {
       id: 6,
-      patientName: "Robert Martinez",
-      age: 38,
       treatment: "Root Canal & Crown",
-      story: "I was terrified of root canals, but the procedure was painless and the staff was so reassuring. The crown looks perfect and I'm back to normal eating.",
+      story: "Root canal treatment in Pune and crown placement at the top dentist in Pune. The procedure was painless and the staff was reassuring. The crown looks perfect and patients are back to normal eating.",
       image: "assets/images/gallery/patient-stories/patient6.jpg",
       rating: 5,
-      duration: "2 weeks"
+      duration: "2 weeks",
+      seoKeywords: "root canal treatment in Pune, top dentist in Pune, crown placement"
     },
     {
       id: 7,
-      patientName: "Jennifer Lee",
-      age: 26,
       treatment: "Cosmetic Bonding",
-      story: "I had a small chip in my front tooth that always bothered me. The cosmetic bonding was quick, painless, and now my smile looks perfect again.",
+      story: "Cosmetic bonding in Wakad at the best dental clinic in Wakad. The cosmetic bonding was quick, painless, and provides perfect smiles. Professional cosmetic dentistry in Wakad delivers excellent results.",
       image: "assets/images/gallery/patient-stories/patient7.jpg",
       rating: 5,
-      duration: "1 hour"
+      duration: "1 hour",
+      seoKeywords: "cosmetic bonding in Wakad, best dental clinic in Wakad, cosmetic dentistry in Wakad"
     },
     {
       id: 8,
-      patientName: "Thomas Anderson",
-      age: 65,
       treatment: "Full Mouth Reconstruction",
-      story: "After years of dental problems, I finally decided to get a full mouth reconstruction. It was life-changing. I can eat, speak, and smile with confidence again.",
+      story: "Full mouth reconstruction in Pune at DentRiz Dental Clinic. Complete reconstruction including dental implants in Pune and cosmetic work at the top dentist in Pune. Life-changing results with confidence restored.",
       image: "assets/images/gallery/patient-stories/patient8.jpg",
       rating: 5,
-      duration: "8 months"
+      duration: "8 months",
+      seoKeywords: "full mouth reconstruction in Pune, DentRiz Dental Clinic, dental implants in Pune, top dentist in Pune"
     }
   ];
 
