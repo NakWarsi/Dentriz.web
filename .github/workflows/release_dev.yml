@@ -36,7 +36,7 @@ jobs:
         run: npm run build
       
       - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
           path: ./DentrizWeb/dist/netajiapp
@@ -54,7 +54,7 @@ jobs:
           lfs: false
       
       - name: Download Build Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: build-artifacts
           path: ./DentrizWeb/dist/netajiapp
