@@ -16,7 +16,7 @@
           <div class="rating-info">
             <span class="rating-number">4.8</span>
             <span class="rating-text">out of 5</span>
-            <span class="review-count">Based on 584 reviews</span>
+            <span class="review-count">Based on patient reviews</span>
           </div>
         </div>
       </div>
@@ -26,8 +26,8 @@
   <!-- Review Platforms Section -->
   <section class="platforms-section">
     <div class="container">
-      <h2>Our Reviews Across Platforms</h2>
-      <p>We're proud to maintain excellent ratings across all major review platforms</p>
+      <h2>Patient Reviews & Testimonials</h2>
+      <p>See what our patients are saying about their dental care experience</p>
       
       <div class="platforms-grid">
         <div class="platform-card" *ngFor="let platform of reviewPlatforms">
@@ -57,11 +57,12 @@
   <!-- Featured Testimonials Section -->
   <section class="testimonials-section">
     <div class="container">
-      <h2>What Our Patients Say</h2>
-      <p>Real testimonials from our satisfied patients</p>
+      <h2>Patient Testimonials</h2>
+      <p>Hear from our satisfied patients about their experience</p>
       
       <div class="testimonials-grid">
         <div class="testimonial-card" *ngFor="let testimonial of testimonials">
+          <div class="seo-badge">SEO</div>
           <div class="testimonial-header">
             <div class="patient-info">
               <h4>{{ testimonial.name }}</h4>
@@ -88,11 +89,11 @@
   <section class="cta-section">
     <div class="container">
       <div class="cta-content">
-        <h2>Ready to Experience Excellence?</h2>
-        <p>Join our satisfied patients and discover why DentRiz Dental is the preferred choice for dental care</p>
+        <h2>Ready to Experience Our Care?</h2>
+        <p>Join our satisfied patients and discover why DentRiz Dental Clinic is the preferred choice for dental care in Wakad and Hinjewadi</p>
         <div class="cta-buttons">
-          <button class="btn-primary">Book Appointment</button>
-          <button class="btn-secondary">Learn More</button>
+          <a href="/contact" class="btn-primary">Book Appointment</a>
+          <a href="/about" class="btn-secondary">Learn More</a>
         </div>
       </div>
     </div>

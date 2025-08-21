@@ -94,6 +94,12 @@
   transform: translateY(0);
 }
 
+.dropdown-menu.dropdown-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 .dropdown-menu li {
   border-bottom: 1px solid #ecf0f1;
 }
@@ -242,12 +248,21 @@
   
   .dropdown-menu {
     position: static;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     transform: none;
     box-shadow: none;
     background: #f8f9fa;
     margin-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-menu.dropdown-open {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px;
   }
   
   .mobile-menu-toggle {
