@@ -67,6 +67,192 @@
   color: white;
 }
 
+/* Founder Section */
+.founder-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.founder-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.founder-text .section-title {
+  text-align: left;
+  margin-bottom: 2rem;
+  color: #1e3c72;
+}
+
+.founder-info h3 {
+  font-size: 2.2rem;
+  color: #1e3c72;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.founder-title {
+  font-size: 1.3rem;
+  color: #ff6b35;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.founder-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #495057;
+  margin-bottom: 2rem;
+}
+
+.founder-credentials {
+  margin-bottom: 2rem;
+}
+
+.founder-credentials h4 {
+  font-size: 1.2rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.founder-credentials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.founder-credentials li {
+  padding: 0.5rem 0;
+  color: #495057;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.founder-credentials li:before {
+  content: "✓";
+  color: #ff6b35;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.founder-philosophy {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #ff6b35;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.founder-philosophy h4 {
+  font-size: 1.2rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.founder-philosophy p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+  font-style: italic;
+  margin: 0;
+}
+
+.founder-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.founder-photo {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 2px solid #e9ecef;
+  background: white;
+}
+
+.founder-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.founder-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(30, 60, 114, 0.9));
+  color: white;
+  padding: 2rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.founder-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.founder-subtitle {
+  font-size: 1rem;
+  color: #ff6b35;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.founder-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design for Founder Section */
+@media (max-width: 768px) {
+  .founder-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .founder-text .section-title {
+    text-align: center;
+  }
+  
+  .founder-info h3 {
+    font-size: 1.8rem;
+  }
+  
+  .founder-img {
+    max-width: 300px;
+  }
+  
+  .founder-info-overlay {
+    padding: 1.5rem 1rem 1rem;
+  }
+  
+  .founder-name {
+    font-size: 1.1rem;
+  }
+  
+  .founder-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
