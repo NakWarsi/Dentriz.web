@@ -164,15 +164,15 @@
 }
 
 .founder-image {
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 15rem;
 }
 
 .founder-photo {
   position: relative;
-  border-radius: 15px;
+  border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   border: 2px solid #e9ecef;
@@ -206,12 +206,33 @@
 }
 
 .founder-subtitle {
-  font-size: 1rem;
-  color: #ff6b35;
+  font-size: large;
+  color: #4dbd90;
+  text-align: center;
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
   margin: 0;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.founder-subtitle-small {
+  font-size: 1.2rem;
+  color: #718874;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.founder-image-dubtitle-down {
+  font-size: 0.8rem;
+  color: #3a4e41;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  font-style: italic;
 }
 
 .founder-buttons {
@@ -249,7 +270,7 @@
   }
   
   .founder-subtitle {
-    font-size: 0.9rem;
+    font-size: 3rem;
   }
 }
 
