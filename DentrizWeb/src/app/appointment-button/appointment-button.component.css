@@ -271,12 +271,6 @@
     display: none;
   }
   
-  /* Show abbreviated text for call button on mobile */
-  .call-button .button-text {
-    display: block;
-    font-size: 12px;
-  }
-  
   .modal-content {
     width: 95%;
     margin: 20px;

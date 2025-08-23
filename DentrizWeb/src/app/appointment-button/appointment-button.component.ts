@@ -75,7 +75,7 @@ export class AppointmentButtonComponent {
 
   callToBook() {
     // Phone number for the dental office - replace with actual number
-    const phoneNumber = '+1-555-123-4567';
+    const phoneNumber = '+91-932-144-9313';
     
     // Create tel: link for phone call
     const telLink = `tel:${phoneNumber}`;
