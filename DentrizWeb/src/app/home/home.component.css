@@ -125,7 +125,7 @@
 
 .founder-title {
   font-size: 1.3rem;
-  color: #ff6b35;
+  color: #bc7b31;
   font-weight: 600;
   margin-bottom: 1.5rem;
   font-style: italic;
@@ -134,7 +134,7 @@
 .founder-description {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #495057;
+  color: #000000;
   margin-bottom: 2rem;
 }
 
@@ -144,7 +144,7 @@
 
 .founder-credentials h4 {
   font-size: 1.2rem;
-  color: #1e3c72;
+  color: #000000;
   margin-bottom: 1rem;
   font-weight: 600;
 }
