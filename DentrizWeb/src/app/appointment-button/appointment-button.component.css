@@ -44,6 +44,23 @@
   box-shadow: 0 12px 35px rgba(40, 167, 69, 0.4);
 }
 
+/* Add pulsing animation for call button to draw attention */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+  }
+  50% {
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.6);
+  }
+  100% {
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+  }
+}
+
+.call-button {
+  animation: pulse 2s infinite;
+}
+
 .button-content {
   display: flex;
   align-items: center;
@@ -244,7 +261,7 @@
   }
   
   .call-button {
-    bottom: 80px;
+    bottom: 90px;
     right: 20px;
     padding: 12px 20px;
     font-size: 14px;
@@ -252,6 +269,12 @@
   
   .button-text {
     display: none;
+  }
+  
+  /* Show abbreviated text for call button on mobile */
+  .call-button .button-text {
+    display: block;
+    font-size: 12px;
   }
   
   .modal-content {
@@ -295,7 +318,7 @@
   }
   
   .call-button {
-    bottom: 70px;
+    bottom: 80px;
     right: 15px;
     padding: 10px 15px;
   }

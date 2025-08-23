@@ -184,14 +184,35 @@
 </div>
 
       <div class="new-patients-image">
-        <div class="clinic-images">
-          <div class="clinic-image">
-            <img src="/images/clinic/clinic-exterior.jpg" alt="DentRiz Dental Clinic Exterior" class="clinic-img">
-            <!-- <p class="image-caption">Modern Dental Clinic</p> -->
-          </div>
-          <div class="clinic-image">
-            <img src="/images/clinic/clinic-interior.jpg" alt="DentRiz Dental Clinic Interior" class="clinic-img">
-            <!-- <p class="image-caption">State-of-the-Art Equipment</p> -->
+        <div class="clinic-images-carousel">
+          <div class="carousel-container">
+            <div class="carousel-image">
+              <img 
+                [src]="clinicImages[currentImageIndex].src" 
+                [alt]="clinicImages[currentImageIndex].alt" 
+                class="clinic-img"
+                (error)="onImageError($event)">
+              <p class="image-caption">{{ clinicImages[currentImageIndex].caption }}</p>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <button class="carousel-nav prev" (click)="previousImage()" aria-label="Previous image">
+              <span>‹</span>
+            </button>
+            <button class="carousel-nav next" (click)="nextImage()" aria-label="Next image">
+              <span>›</span>
+            </button>
+            
+            <!-- Image indicators -->
+            <div class="carousel-indicators">
+              <button 
+                *ngFor="let image of clinicImages; let i = index" 
+                class="indicator" 
+                [class.active]="i === currentImageIndex"
+                (click)="goToImage(i)"
+                [attr.aria-label]="'Go to image ' + (i + 1)">
+              </button>
+            </div>
           </div>
         </div>
         <div class="clinic-map">
@@ -208,14 +229,6 @@
                title="DentRiz Dental Clinic Location"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
              </iframe>
-            <!-- <div class="map-fallback" style="display: none; background: #f5f5f5; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-              <div style="text-align: center;">
-                                 <img src="https://maps.googleapis.com/maps/api/staticmap?center=18.590524798110774,73.76123333188961&zoom=15&size=400x300&maptype=roadmap&markers=color:red%7Clabel:D%7C18.590524798110774,73.76123333188961&key=YOUR_API_KEY" 
-                      alt="DentRiz Dental Clinic Location" 
-                      style="max-width: 100%; height: auto; border-radius: 8px;">
-                <p style="margin: 10px 0 0 0; font-size: 14px; color: #999;">📍 Wakad, Pune, Maharashtra</p>
-              </div>
-            </div> -->
           </div>
           <div class="map-info">
             <p><strong>📍 Location:</strong> Wakad, Pune, Maharashtra</p>
@@ -346,18 +359,3 @@
   </div>
 </section>
 
-
-<!-- CTA Section -->
-<!-- <section class="cta-section">
-  <div class="container">
-    <div class="cta-content">
-             <h2>Contact the Best Dentist in Wakad & Hinjewadi Today</h2>
-       <p>
-         As the top 3 dentist in Pune and the best dental clinic in Wakad, we offer flexible hours, on-time appointments, and convenient locations in both Wakad and Hinjewadi. Our caring and highly experienced team of dentists in Pune is committed to taking great care of your smile with comprehensive services including dental implants in Wakad, cosmetic dentistry in Wakad, veneers in Wakad, teeth whitening treatment in Pune, and more. Whether you need a family dentist in Wakad, pediatric dentist Pune services, or advanced cosmetic dentistry in Pune, you've found the top dentist in Pune! Call today to schedule your appointment at our dental clinic in Wakad or Hinjewadi.
-       </p>
-      <div class="cta-buttons">
-        <a href="tel:750-616-8095" class="btn-primary">📞 750-616-8095</a>
-      </div>
-    </div>
-  </div>
-</section> -->
