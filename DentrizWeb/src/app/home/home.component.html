@@ -1,26 +1,151 @@
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <div class="container">
-      <div class="hero-text">
-                 <h1 class="hero-title">DentRiz - Your Smile, Our Priority!</h1>
-         <p class="hero-subtitle">
-          Welcome to <strong>DentRiz Dental Clinic</strong>, your trusted dental clinic in Hinjewadi and Wakad, Pune. 
-We provide comprehensive dental care including <strong>cosmetic dentistry, dental implants, Invisalign, and family dentistry services</strong>. 
-Our experienced and compassionate team is dedicated to making every visit comfortable, transparent, and tailored to your needs. 
-
-Whether you’re looking for routine dental check-ups, advanced treatments, or a smile makeover, DentRiz Dental is here to care for you and your family. 
-Book your appointment today and discover modern, patient-first dental care in Hinjewadi and Wakad.
-         </p>
-        <div class="hero-buttons">
-          <a href="tel:750-616-8095" class="btn-primary">📞 750-616-8095</a>
+<!-- Meet the Founder Section -->
+<section class="founder-section">
+  <div class="container">
+    <div class="founder-content">
+      <div class="founder-text">
+        <h2 class="founder-subtitle-small">Know your Doctor</h2>
+        <div class="founder-info">
+          <h3>Dr. Rizwana Khan</h3>
+          <p class="founder-title">Founder & Chief Dentist</p>
+                     <p class="founder-description">
+             A proud graduate of <strong>Government Dental College, Mumbai</strong> — one of the most prestigious dental institutions in India.
+             Dr. Khan has honed his expertise in a wide range of specialties <strong>including cosmetic dentistry, dental implants, smile designing, root canal treatments, full-mouth rehabilitation, preventive care, pediatric dentistry</strong>.
+             After serving for more than 3 years in a government hospital, where he treated diverse and complex dental cases, Dr. Khan successfully ran a private clinic in Mumbai for over 5 years, building a reputation for his patient-focused care and precision-driven treatments. Today, he continues his practice in Pune, bringing the same level of dedication, innovation, and compassion to every patient.
+             <br>
+             Dr. Khan’s mission is not just to treat dental concerns but to help patients achieve lifelong oral health, confidence, and beautiful smiles.
+           </p>
+          <div class="founder-philosophy">
+            <h4>Our Philosophy:</h4>
+            <p>
+              "DentRiz Dental Clinic was built on the belief that dentistry should be modern, compassionate, and patient-focused. Our philosophy is to combine cutting-edge technology with a human touch, ensuring every patient receives the highest standard of care. We strive to create smiles that are not only healthy but also filled with confidence and happiness."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="founder-image">
+        <div class="founder-photo">
+          <img src="/images/home/dr-rizwana-khan-c1.jpg?v=2" alt="Dr. Rizwana Khan - Founder & Chief Dentist" class="founder-img">
+          <div >
+            <p class="founder-subtitle">Dr. Rizwana Khan</p>
+            <p class="founder-image-dubtitle-down">(BDS. Govt. Dental College, Mumbai)</p>
+          </div>
+        </div>
+        <div class="founder-buttons">
+          <a href="tel:750-616-8095" class="emergency-btn">📞 Emergency Call</a>
+          <!-- <a href="tel:750-616-8095" class="btn-primary">📞 emergency</a> -->
           <a href="/contact" class="btn-secondary">Contact Us</a>
         </div>
       </div>
-      <div class="hero-image">
-        <div class="hero-placeholder">
-          <span>🦷</span>
-          <p>Professional Dental Care</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- New Patients Section -->
+<section class="new-patients">
+  <div class="container">
+    <div class="new-patients-content">
+      <div class="new-patients-text">
+  <div class="clinic-location-details">
+  <h3>Clinic Accessibility & Nearby Convenience</h3>
+  
+  <div class="detail">
+    <h4>📍 Address</h4>
+    <p>
+      Dentriz Dental Clinic <br>
+      Rohan Tarang, Wakad Chowk <br>
+      Opposite Alamgir Masjid <br>
+      <em>Landmark:</em> Close to Mahavir Medical & Hinjewadi Bridge
+    </p>
+  </div>
+
+  <div class="detail">
+    <h4>🚗 Parking</h4>
+    <p>Free parking available within our premises, with easy access for both two-wheelers and four-wheelers.</p>
+  </div>
+
+  <div class="detail">
+    <h4>🚌 Public Transit</h4>
+    <p>Connected by multiple city bus routes, with Wakad Chowk Bus Stop just a few steps away.</p>
+  </div>
+
+  <div class="detail">
+    <h4>♿ Metro Access</h4>
+    <p>Walking distance from Hinjewadi Bridge Metro Station, making it simple for daily commuters.</p>
+  </div>
+
+  <div class="detail">
+    <h4>👨‍👩‍👧‍👦 Accessibility</h4>
+    <p>Our clinic is designed to be family-friendly and wheelchair accessible, with a clean waiting area for kids and seniors.</p>
+  </div>
+
+  <div class="detail">
+    <h4>⏰ Flexible Hours</h4>
+    <p>Open late till 10:00 PM mon to sat, so you can schedule visits after office or school hours or on weekends. </p>
+  </div>
+
+  <div class="detail">
+    <h4>🛡️ Comfort & Safety</h4>
+    <p>A modern, hygienic setup equipped with advanced technology, ensuring a stress-free and safe dental experience.</p>
+  </div>
+</div>
+
+
+  <a href="/contact" class="btn-primary">Book Your Appointment</a>
+</div>
+
+      <div class="new-patients-image">
+        <div class="clinic-images-carousel">
+          <div class="carousel-container">
+            <div class="carousel-image">
+              <img 
+                [src]="clinicImages[currentImageIndex].src" 
+                [alt]="clinicImages[currentImageIndex].alt" 
+                class="clinic-img"
+                (error)="onImageError($event)">
+              <p class="image-caption">{{ clinicImages[currentImageIndex].caption }}</p>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <button class="carousel-nav prev" (click)="previousImage()" aria-label="Previous image">
+              <span>‹</span>
+            </button>
+            <button class="carousel-nav next" (click)="nextImage()" aria-label="Next image">
+              <span>›</span>
+            </button>
+            
+            <!-- Image indicators -->
+            <div class="carousel-indicators">
+              <button 
+                *ngFor="let image of clinicImages; let i = index" 
+                class="indicator" 
+                [class.active]="i === currentImageIndex"
+                (click)="goToImage(i)"
+                [attr.aria-label]="'Go to image ' + (i + 1)">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="clinic-map">
+          <h3>📍 Visit Our Clinic</h3>
+          <div class="map-container">
+                         <iframe 
+               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d236.35202385690053!2d73.76117365276494!3d18.59060519688083!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b97dc645a90f%3A0xf370478ecff49ae9!2sDentriz%20dental%20clinic!5e0!3m2!1sen!2sin!4v1755898762059!5m2!1sen!2sin"
+               width="100%" 
+               height="300" 
+               style="border:0;" 
+               allowfullscreen="" 
+               loading="lazy" 
+               referrerpolicy="no-referrer-when-downgrade"
+               title="DentRiz Dental Clinic Location"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+             </iframe>
+          </div>
+          <div class="map-info">
+            <p><strong>📍 Location:</strong> Wakad, Pune, Maharashtra</p>
+            <p><strong>🕒 Hours:</strong> Mon-Sat: 9:00 AM - 10:00 PM</p>
+            <a href="https://maps.app.goo.gl/qJdrWXYGJR8ki7BR7" target="_blank" class="btn-outline">📍 Get Directions</a>
+          </div>
         </div>
       </div>
     </div>
@@ -32,7 +157,7 @@ Book your appointment today and discover modern, patient-first dental care in Hi
   <div class="container">
     <h2 class="section-title">Why Choose DentRiz Dental Clinic in Pune</h2>
     <p class="section-intro">
-      At <strong>DentRiz Dental</strong>, we believe every patient deserves a healthy, confident smile. 
+      At <strong>DentRiz Dental Clinic</strong>, we believe every patient deserves a healthy, confident smile. 
       Here’s why families in Wakad, Hinjewadi, and across Pune trust us for their dental care:
     </p>
     <div class="reasons-grid">
@@ -101,28 +226,6 @@ Book your appointment today and discover modern, patient-first dental care in Hi
   </div>
 </section>
 
-
-
-<!-- New Patients Section -->
-<section class="new-patients">
-  <div class="container">
-    <div class="new-patients-content">
-      <div class="new-patients-text">
-                 <h2>Leading Dental Clinic in Wakad & Hinjewadi - New Patients Welcome</h2>
-         <p>
-           As the top dentist in Pune serving Wakad and Hinjewadi, our kind, attentive, and diligent team prides itself on its commitment to excellence. Whether you're looking for a cosmetic dentist in Wakad, dental implants in Pune, or a family dentist in Wakad, we provide comprehensive dental care using proven technologies and techniques. Our dental clinic in Hinjewadi and Wakad goes above and beyond to ensure your visits are comfortable and effective. From pediatric dentistry in Pune to advanced cosmetic dentistry, our compassionate dental professionals are focused on your comfort and satisfaction. Whatever your oral health needs and goals, the best dentist in Hinjewadi and Wakad is here for you!
-         </p>
-        <a href="/contact" class="btn-primary">New Patients</a>
-      </div>
-      <div class="new-patients-image">
-        <div class="image-placeholder">
-          <span>👨‍⚕️</span>
-          <p>Expert Dental Team</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Services Overview -->
 <section class="services-overview">
@@ -242,19 +345,3 @@ Book your appointment today and discover modern, patient-first dental care in Hi
   </div>
 </section>
 
-
-<!-- CTA Section -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-content">
-             <h2>Contact the Best Dentist in Wakad & Hinjewadi Today</h2>
-       <p>
-         As the top 3 dentist in Pune and the best dental clinic in Wakad, we offer flexible hours, on-time appointments, and convenient locations in both Wakad and Hinjewadi. Our caring and highly experienced team of dentists in Pune is committed to taking great care of your smile with comprehensive services including dental implants in Wakad, cosmetic dentistry in Wakad, veneers in Wakad, teeth whitening treatment in Pune, and more. Whether you need a family dentist in Wakad, pediatric dentist Pune services, or advanced cosmetic dentistry in Pune, you've found the top dentist in Pune! Call today to schedule your appointment at our dental clinic in Wakad or Hinjewadi.
-       </p>
-      <div class="cta-buttons">
-        <a href="tel:750-616-8095" class="btn-primary">📞 750-616-8095</a>
-        <a href="/contact" class="btn-secondary">Contact Us</a>
-      </div>
-    </div>
-  </div>
-</section>

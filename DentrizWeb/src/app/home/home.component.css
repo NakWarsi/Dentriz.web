@@ -5,6 +5,35 @@
   padding: 0 2rem;
 }
 
+.emergency-btn {
+  display: inline-block;
+  background: #e63946;  /* bright red */
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.emergency-btn:hover {
+  background: #d62828;
+  transform: scale(1.05);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .emergency-btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+  }
+}
+
 .section-title {
   text-align: center;
   font-size: 2.5rem;
@@ -65,6 +94,209 @@
 .btn-outline:hover {
   background: #ff6b35;
   color: white;
+}
+
+/* Founder Section */
+.founder-section {
+  /* background: linear-gradient(135deg, #fafafa 0%, #e0e9e6 100%); */
+  background: rgb(231, 240, 234);
+  padding: 80px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.founder-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.founder-text .section-title {
+  text-align: left;
+  color: #1e3c72;
+}
+
+.founder-info h3 {
+  font-size: 2.2rem;
+  color: #1e3c72;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.founder-title {
+  font-size: 1.3rem;
+  color: #ff6b35;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.founder-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #495057;
+  margin-bottom: 2rem;
+}
+
+.founder-credentials {
+  margin-bottom: 2rem;
+}
+
+.founder-credentials h4 {
+  font-size: 1.2rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.founder-credentials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.founder-credentials li {
+  padding: 0.5rem 0;
+  color: #495057;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.founder-credentials li:before {
+  content: "✓";
+  color: #ff6b35;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.founder-philosophy {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #ff6b35;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.founder-philosophy h4 {
+  font-size: 1.2rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.founder-philosophy p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+  font-style: italic;
+  margin: 0;
+}
+
+.founder-image {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  gap: 15rem;
+}
+
+.founder-photo {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 2px solid #e9ecef;
+  background: white;
+}
+
+.founder-img {
+  width: 100%;
+  max-width: fit-content;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.founder-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(30, 60, 114, 0.9));
+  color: white;
+  padding: 2rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.founder-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.founder-subtitle {
+  font-size: large;
+  color: #4dbd90;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.founder-subtitle-small {
+  font-size: 1.2rem;
+  color: #718874;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.founder-image-dubtitle-down {
+  font-size: 0.8rem;
+  color: #3a4e41;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.founder-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design for Founder Section */
+@media (max-width: 768px) {
+  .founder-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .founder-text .section-title {
+    text-align: center;
+  }
+  
+  .founder-info h3 {
+    font-size: 1.8rem;
+  }
+  
+  .founder-info-overlay {
+    padding: 1.5rem 1rem 1rem;
+  }
+  
+  .founder-name {
+    font-size: 1.1rem;
+  }
+  
+  .founder-subtitle {
+    font-size: 3rem;
+  }
 }
 
 /* Hero Section */
@@ -221,30 +453,170 @@
 
 .new-patients-image {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
 }
 
-.image-placeholder {
+/* Clinic Images Carousel */
+.clinic-images-carousel {
+  margin-bottom: 2rem;
+}
+
+.carousel-container {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+.carousel-image {
+  position: relative;
+  text-align: center;
+}
+
+.clinic-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.clinic-img:hover {
+  transform: scale(1.02);
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: white;
+  padding: 1rem;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Carousel Navigation */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: #1e3c72;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.carousel-nav:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.carousel-nav.prev {
+  left: 15px;
+}
+
+.carousel-nav.next {
+  right: 15px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.clinic-map {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.clinic-map h3 {
+  color: #1e3c72;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: relative;
+  min-height: 300px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  display: block;
+}
+
+.map-fallback {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border: 2px dashed #dee2e6;
-  border-radius: 20px;
-  padding: 3rem;
+}
+
+.map-info {
   text-align: center;
-  width: 100%;
-  max-width: 400px;
 }
 
-.image-placeholder span {
-  font-size: 4rem;
-  display: block;
-  margin-bottom: 1rem;
+.map-info p {
+  margin: 0.5rem 0;
+  color: #495057;
+  font-size: 1rem;
 }
 
-.image-placeholder p {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #6c757d;
+.map-info .btn-outline {
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 /* Services Overview */
@@ -360,6 +732,54 @@
   .new-patients-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .clinic-images-carousel {
+    margin-bottom: 1.5rem;
+  }
+  
+  .carousel-container {
+    padding: 15px;
+  }
+  
+  .clinic-img {
+    max-height: 250px;
+  }
+  
+  .carousel-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .carousel-nav.prev {
+    left: 10px;
+  }
+  
+  .carousel-nav.next {
+    right: 10px;
+  }
+  
+  .carousel-indicators {
+    bottom: 15px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .image-caption {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .clinic-map {
+    padding: 1.5rem;
+  }
+  
+  .clinic-map h3 {
+    font-size: 1.3rem;
   }
   
   .section-title {

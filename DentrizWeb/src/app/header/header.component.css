@@ -17,18 +17,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  flex: 0 0 auto;
+  min-width: 200px;
 }
 
 .logo a {
   text-decoration: none;
-  color: #2c3e50;
+  color: #00463a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-image {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .logo h1 {
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
-  color: #1e3c72;
+  color: #00463a;
   margin-bottom: 5px;
 }
 
@@ -38,12 +55,18 @@
   font-style: italic;
 }
 
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .nav-list {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -62,12 +85,12 @@
 }
 
 .nav-list li a:hover {
-  background-color: #1e3c72;
+  background-color: #bc7b31;
   color: white;
 }
 
 .nav-list li a.active {
-  background-color: #1e3c72;
+  background-color: #bc7b31;
   color: white;
 }
 
@@ -117,7 +140,7 @@
 
 .dropdown-menu li a:hover {
   background-color: #f8f9fa;
-  color: #1e3c72;
+  color: #bc7b31;
 }
 
 .mobile-menu-toggle {
@@ -126,9 +149,9 @@
   cursor: pointer;
   gap: 5px;
   padding: 12px 10px;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: linear-gradient(135deg, #bc7b31 0%, #d4a574 100%);
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(30, 60, 114, 0.3);
+  box-shadow: 0 4px 12px rgba(188, 123, 49, 0.3);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -148,12 +171,12 @@
 
 .mobile-menu-toggle:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(30, 60, 114, 0.4);
+  box-shadow: 0 6px 20px rgba(188, 123, 49, 0.4);
 }
 
 .mobile-menu-toggle:active {
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(30, 60, 114, 0.3);
+  box-shadow: 0 2px 8px rgba(188, 123, 49, 0.3);
 }
 
 .mobile-menu-toggle span {
@@ -202,8 +225,29 @@
   }
   
   .logo {
-    flex: 1;
+    flex: 0 0 auto;
+    min-width: auto;
     margin-left: 0;
+  }
+  
+  .logo a {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo-image {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .logo h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  
+  .tagline {
+    display: none;
   }
   
   .nav {

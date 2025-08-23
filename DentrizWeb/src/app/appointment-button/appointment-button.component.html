@@ -6,6 +6,14 @@
   </div>
 </div>
 
+<!-- Call to Book Appointment Button -->
+<div class="call-button" (click)="callToBook()">
+  <div class="button-content">
+    <span class="button-icon">📞</span>
+    <span class="button-text">Call for Appointment</span>
+  </div>
+</div>
+
 <!-- Appointment Modal -->
 <div class="modal-overlay" *ngIf="isModalOpen" (click)="closeModal()">
   <div class="modal-content" (click)="onModalClick($event)">
@@ -34,29 +42,6 @@
             name="email" 
             [(ngModel)]="appointmentForm.email" 
             required>
-        </div>
-      </div>
-      
-      <div class="form-row">
-        <div class="form-group">
-          <label for="phone">Phone Number *</label>
-          <input 
-            type="tel" 
-            id="phone" 
-            name="phone" 
-            [(ngModel)]="appointmentForm.phone" 
-            required>
-        </div>
-        
-        <div class="form-group">
-          <label for="preferredDoctor">Preferred Doctor</label>
-          <select 
-            id="preferredDoctor" 
-            name="preferredDoctor" 
-            [(ngModel)]="appointmentForm.preferredDoctor">
-            <option value="">Select a doctor</option>
-            <option *ngFor="let doctor of doctors" [value]="doctor">{{ doctor }}</option>
-          </select>
         </div>
       </div>
       

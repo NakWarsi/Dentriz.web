@@ -21,6 +21,46 @@
   box-shadow: 0 12px 35px rgba(255, 107, 53, 0.4);
 }
 
+/* Call Button */
+.call-button {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border-radius: 50px;
+  padding: 15px 25px;
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.call-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(40, 167, 69, 0.4);
+}
+
+/* Add pulsing animation for call button to draw attention */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+  }
+  50% {
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.6);
+  }
+  100% {
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+  }
+}
+
+.call-button {
+  animation: pulse 2s infinite;
+}
+
 .button-content {
   display: flex;
   align-items: center;
@@ -220,6 +260,13 @@
     font-size: 14px;
   }
   
+  .call-button {
+    bottom: 90px;
+    right: 20px;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
   .button-text {
     display: none;
   }
@@ -260,6 +307,12 @@
 @media (max-width: 480px) {
   .floating-button {
     bottom: 15px;
+    right: 15px;
+    padding: 10px 15px;
+  }
+  
+  .call-button {
+    bottom: 80px;
     right: 15px;
     padding: 10px 15px;
   }
