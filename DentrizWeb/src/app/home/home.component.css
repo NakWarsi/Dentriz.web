@@ -209,7 +209,7 @@
 
 .founder-img {
   width: 100%;
-  max-width: 400px;
+  max-width: fit-content;
   height: auto;
   display: block;
   border-radius: 15px;
@@ -283,10 +283,6 @@
   
   .founder-info h3 {
     font-size: 1.8rem;
-  }
-  
-  .founder-img {
-    max-width: 300px;
   }
   
   .founder-info-overlay {
