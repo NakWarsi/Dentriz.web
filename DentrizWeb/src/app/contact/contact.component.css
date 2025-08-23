@@ -1,7 +1,7 @@
 /* Contact Hero */
 .contact-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #fafafa 0%, #e0e9e6 100%);
+  color: rgb(29, 31, 119);
   padding: 100px 0;
   text-align: center;
 }
