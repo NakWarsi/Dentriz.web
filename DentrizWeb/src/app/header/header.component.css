@@ -17,11 +17,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  flex: 0 0 auto;
+  min-width: 200px;
 }
 
 .logo a {
   text-decoration: none;
   color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-image {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .logo h1 {
@@ -38,12 +55,18 @@
   font-style: italic;
 }
 
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .nav-list {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -202,8 +225,29 @@
   }
   
   .logo {
-    flex: 1;
+    flex: 0 0 auto;
+    min-width: auto;
     margin-left: 0;
+  }
+  
+  .logo a {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo-image {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .logo h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  
+  .tagline {
+    display: none;
   }
   
   .nav {
