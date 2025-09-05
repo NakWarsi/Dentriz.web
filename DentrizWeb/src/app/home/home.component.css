@@ -108,7 +108,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: center;  
+  margin-top: -4rem;
 }
 
 .founder-text .section-title {
@@ -240,11 +241,41 @@
   margin: 0;
 }
 
+.founder-philosophy-full {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid #bc7b31;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-top: 0rem;
+  margin-bottom: -3rem;
+  width: 100%;
+}
+
+.founder-philosophy-full h4 {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.founder-philosophy-full p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #000000;
+  font-style: italic;
+  margin: 0;
+}
+
 .founder-image {
   display: flexbox;
   flex-direction: column;
   align-items: center;
-  gap: 15rem;
+  gap: 1rem;
+  margin-left: -3rem;
+  margin-bottom: -6rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 .founder-photo {
@@ -254,6 +285,7 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   border: 2px solid #e9ecef;
   background: white;
+  margin-bottom: 0.5rem;
 }
 
 .founder-img {
@@ -308,7 +340,7 @@
   color: #3a4e41;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.2rem;
   opacity: 0.8;
   font-style: italic;
 }
@@ -345,6 +377,18 @@
   
   .founder-subtitle {
     font-size: 3rem;
+  }
+  
+  .founder-image {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  
+  .founder-philosophy-full {
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 }
 
