@@ -12,8 +12,8 @@
       <nav class="nav" [class.nav-open]="isMenuOpen">
         <ul class="nav-list">
           <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" (click)="toggleServices()">Services</a>
+          <li class="dropdown" (mouseenter)="onServicesMouseEnter()" (mouseleave)="onServicesMouseLeave()">
+            <a routerLink="/services" routerLinkActive="active" class="dropdown-toggle" (click)="closeMenu()">Services</a>
             <ul class="dropdown-menu" [class.dropdown-open]="isServicesOpen">
               <li><a routerLink="/services/preventive-care" (click)="closeMenu(); closeServices()">Preventive Care</a></li>
               <li><a routerLink="/services/restorative-care" (click)="closeMenu(); closeServices()">Restorative Care</a></li>
