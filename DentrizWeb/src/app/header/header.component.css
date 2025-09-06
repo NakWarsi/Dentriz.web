@@ -41,18 +41,26 @@
   border-radius: 4px;
 }
 
-.logo h1 {
+.logo .logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+h1 {
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
   color: #00463a;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .tagline {
   font-size: 14px;
-  color: #7f8c8d;
+  color: #546585;
   font-style: italic;
+  margin: 0;
+  line-height: 1;
 }
 
 .nav {
@@ -243,11 +251,12 @@
   
   .logo h1 {
     font-size: 1.2rem;
-    margin-bottom: 0;
+    margin-bottom: 1px;
   }
   
   .tagline {
-    display: none;
+    font-size: 11px;
+    display: block;
   }
   
   .nav {
