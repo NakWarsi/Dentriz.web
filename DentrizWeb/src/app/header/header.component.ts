@@ -28,4 +28,12 @@ export class HeaderComponent {
   closeServices() {
     this.isServicesOpen = false;
   }
+
+  onServicesMouseEnter() {
+    this.isServicesOpen = true;
+  }
+
+  onServicesMouseLeave() {
+    this.isServicesOpen = false;
+  }
 }
