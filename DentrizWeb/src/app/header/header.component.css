@@ -93,12 +93,12 @@ h1 {
 }
 
 .nav-list li a:hover {
-  background-color: #bc7b31;
+  background-color: var(--nav-link-hover-color, #bc7b31);
   color: white;
 }
 
 .nav-list li a.active {
-  background-color: #bc7b31;
+  background-color: var(--nav-link-active-color, #bc7b31);
   color: white;
 }
 
