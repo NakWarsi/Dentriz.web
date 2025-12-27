@@ -34,6 +34,44 @@ jobs:
       - name: Build
         run: npm run build:github-pages
 
+      - name: Verify and prepare build output
+        run: |
+          echo "=== Checking build output structure ==="
+          echo "Contents of dist/:"
+          ls -la dist/ || echo "dist folder not found"
+          
+          echo "Contents of dist/DentrizWeb/:"
+          ls -la dist/DentrizWeb/ || echo "DentrizWeb folder not found"
+          
+          echo "Contents of dist/DentrizWeb/browser/:"
+          ls -la dist/DentrizWeb/browser/ || echo "browser folder not found"
+          
+          echo "=== Searching for index.html ==="
+          find dist -name "index.html" -type f || echo "index.html not found anywhere"
+          
+          echo "=== Full directory tree ==="
+          find dist -type f | head -20
+          
+          # Check if index.html is in a nested browser folder (Angular 17+ quirk)
+          if [ -f "dist/DentrizWeb/browser/browser/index.html" ]; then
+            echo "Found index.html in nested browser folder, copying to root..."
+            cp -r dist/DentrizWeb/browser/browser/* dist/DentrizWeb/browser/
+            rm -rf dist/DentrizWeb/browser/browser
+          fi
+          
+          # Ensure .nojekyll exists (needed for GitHub Pages)
+          touch dist/DentrizWeb/browser/.nojekyll || true
+          
+          # Verify index.html exists at the expected location
+          if [ ! -f "dist/DentrizWeb/browser/index.html" ]; then
+            echo "ERROR: index.html not found in dist/DentrizWeb/browser/"
+            echo "Available files:"
+            ls -la dist/DentrizWeb/browser/
+            exit 1
+          fi
+          
+          echo "✅ Build verification complete. index.html found at dist/DentrizWeb/browser/index.html"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
